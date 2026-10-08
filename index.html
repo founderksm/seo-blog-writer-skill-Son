@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt</title>
+<meta name="description" content="Skill cho ChatGPT: nghiên cứu nguồn, đề xuất 10 tiêu đề, lập dàn ý 9 H2, viết bài 1.800–2.500 từ kèm FAQ, tạo bộ ảnh minh họa và bản nháp WordPress.">
+<link rel="canonical" href="https://founderksm.github.io/seo-blog-writer-skill-Son/">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<meta name="theme-color" content="#14213D">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:site_name" content="SEO Blog Writer">
+<meta property="og:url" content="https://founderksm.github.io/seo-blog-writer-skill-Son/">
+<meta property="og:title" content="SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt">
+<meta property="og:description" content="Skill cho ChatGPT: 10 tiêu đề, dàn ý 9 H2, bài viết 1.800–2.500 từ kèm FAQ, bộ ảnh minh họa và bản nháp WordPress.">
+<meta property="og:image" content="https://founderksm.github.io/seo-blog-writer-skill-Son/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SEO Blog Writer – từ một từ khóa đến bài blog SEO tiếng Việt">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SEO Blog Writer – Từ một từ khóa đến bài blog SEO tiếng Việt">
+<meta name="twitter:description" content="Skill cho ChatGPT: 10 tiêu đề, dàn ý 9 H2, bài viết kèm FAQ, bộ ảnh minh họa và bản nháp WordPress.">
+<meta name="twitter:image" content="https://founderksm.github.io/seo-blog-writer-skill-Son/assets/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#14213D;
+  --graphite:#4A5568;
+  --paper:#FFFFFF;
+  --desk:#EEF3F9;
+  --rule:#D5E0EE;
+  --pencil:#FEBD08;
+  --eraser:#FF928C;
+  --eraser-deep:#B8322B;
+  --wrap:1040px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--desk);color:var(--ink);
+  font-family:"Be Vietnam Pro",Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:17px;line-height:1.65;-webkit-text-size-adjust:100%;
+}
+img,svg{max-width:100%}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--eraser-deep);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* top bar */
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;font-size:18px}
+.brand img{width:30px;height:30px}
+.bar nav{display:flex;gap:22px;font-size:15px}
+.bar nav a{text-decoration:none;color:var(--graphite)}
+.bar nav a:hover{color:var(--ink);text-decoration:underline}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:36px;padding-bottom:72px}
+h1{font-size:clamp(34px,5.2vw,58px);line-height:1.12;font-weight:800;letter-spacing:-.02em;margin:0 0 20px}
+.lead{font-size:19px;color:var(--graphite);max-width:34em;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 22px;
+  border-radius:10px;font-weight:600;font-size:16px;text-decoration:none;border:2px solid var(--ink);cursor:pointer;
+  font-family:inherit;
+}
+.btn-main{background:var(--pencil);color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn-main:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--paper)}
+
+/* draft sheet: a keyword becoming an article */
+.sheet{
+  background:var(--paper);border:2px solid var(--ink);border-radius:14px;padding:26px 26px 22px;
+  box-shadow:10px 10px 0 var(--rule);position:relative;
+}
+.kw{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--graphite);margin-bottom:18px}
+.kw b{background:var(--pencil);color:var(--ink);padding:4px 12px;border-radius:999px;font-weight:600;font-size:15px}
+.sheet .t{font-weight:800;font-size:21px;line-height:1.3;margin:0 0 14px}
+.sheet ol{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.sheet li{display:grid;grid-template-columns:36px 1fr 44px;align-items:center;gap:10px;font-size:14.5px}
+.sheet li span:first-child{font-weight:600;color:var(--graphite);font-size:13px}
+.sheet li i{display:block;height:26px;border-radius:5px;background:linear-gradient(135deg,#FFE9A6,#FFC9C5)}
+.sheet li em{font-style:normal;border-bottom:2px solid var(--rule);padding-bottom:3px}
+.sheet .more{margin-top:14px;padding-top:12px;border-top:2px dashed var(--rule);font-size:14px;color:var(--graphite);display:flex;flex-wrap:wrap;gap:6px 16px}
+.sheet .more span::before{content:"✓ ";color:var(--eraser-deep);font-weight:800}
+
+/* sections */
+section{padding:64px 0}
+.paper{background:var(--paper);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;font-weight:800;letter-spacing:-.015em;margin:0 0 12px}
+.sub{color:var(--graphite);max-width:40em;margin:0 0 34px}
+h3{font-size:19px;font-weight:800;margin:0 0 6px;line-height:1.3}
+
+/* deliverables */
+.gets{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.gets li{padding:18px 0 18px 34px;border-bottom:2px solid var(--rule);position:relative}
+.gets li::before{content:"";position:absolute;left:0;top:26px;width:18px;height:10px;border-left:4px solid var(--pencil);border-bottom:4px solid var(--pencil);transform:rotate(-45deg);transform-origin:left bottom}
+.note{margin-top:22px;color:var(--graphite);font-size:15.5px}
+
+/* workflow */
+.flow{list-style:none;margin:0;padding:0;counter-reset:step -1;position:relative}
+.flow::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:4px;background:var(--pencil);border-radius:2px}
+.flow li{counter-increment:step;position:relative;padding:0 0 30px 68px}
+.flow li:last-child{padding-bottom:0}
+.flow li::before{
+  content:counter(step);position:absolute;left:0;top:0;width:46px;height:46px;border-radius:50%;
+  background:var(--ink);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px;
+}
+.flow p{margin:0;color:var(--graphite);max-width:44em}
+.flow .out{margin-top:6px;color:var(--ink);font-size:15.5px}
+.gate{display:inline-block;margin-left:8px;padding:2px 10px;border-radius:999px;background:var(--eraser);color:var(--ink);font-size:13px;font-weight:600;vertical-align:middle;white-space:nowrap}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
+.mode{border:2px solid var(--ink);border-radius:12px;padding:20px 22px;background:var(--paper)}
+.mode p{margin:0;color:var(--graphite);font-size:16px}
+
+/* tables */
+.tbl{width:100%;border-collapse:collapse;font-size:16px}
+.tbl th,.tbl td{text-align:left;padding:14px 16px 14px 0;border-bottom:2px solid var(--rule);vertical-align:top}
+.tbl th{font-weight:800;border-bottom-color:var(--ink)}
+.tbl td:last-child,.tbl th:last-child{padding-right:0}
+.plain{margin:26px 0 0;padding-left:20px;color:var(--graphite)}
+.plain li{margin-bottom:6px}
+
+/* prompts */
+.prompts{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.prompt{background:var(--ink);color:#fff;border-radius:14px;padding:22px;display:flex;flex-direction:column}
+.prompt h3{color:#fff}
+.prompt pre{
+  margin:10px 0 18px;white-space:pre-wrap;word-break:break-word;font-family:inherit;font-size:15.5px;line-height:1.6;
+  color:#E4EBF5;flex:1;
+}
+.copy{align-self:flex-start;min-height:46px;padding:10px 18px;border-radius:9px;border:2px solid var(--pencil);background:var(--pencil);color:var(--ink);font:600 15px/1 inherit;font-family:inherit;cursor:pointer}
+.copy:hover{background:#FFD24D}
+.copy.done{background:transparent;color:var(--pencil)}
+.wp{margin-top:28px;border-left:6px solid var(--pencil);padding:4px 0 4px 18px;max-width:46em;color:var(--graphite)}
+.wp b{color:var(--ink)}
+
+/* principles */
+.rules{list-style:none;margin:0;padding:0;columns:2;column-gap:48px}
+.rules li{break-inside:avoid;padding:12px 0;border-bottom:2px solid var(--rule)}
+
+footer{padding:40px 0 56px;color:var(--graphite);font-size:15px}
+footer .row{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between}
+footer a{color:var(--ink);font-weight:600}
+
+@media (max-width:860px){
+  body{font-size:16px}
+  .hero{grid-template-columns:1fr;gap:36px;padding-top:16px;padding-bottom:52px}
+  .bar nav{display:none}
+  section{padding:48px 0}
+  .gets,.modes,.prompts{grid-template-columns:1fr}
+  .rules{columns:1}
+  .actions .btn{flex:1 1 100%}
+  .sheet{box-shadow:6px 6px 0 var(--rule);padding:20px 18px}
+  .flow li{padding-left:60px}
+  /* tables become stacked rows */
+  .tbl thead{position:absolute;left:-9999px}
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl tr{padding:14px 0;border-bottom:2px solid var(--rule)}
+  .tbl td{border:0;padding:2px 0}
+  .tbl td:first-child{font-weight:800}
+  .tbl td[data-l]:not(:first-child)::before{content:attr(data-l) ": ";font-weight:600;color:var(--ink)}
+  .tbl td:not(:first-child){color:var(--graphite)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn-main:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="bar">
+    <a class="brand" href="#top"><img src="assets/icon.svg" alt="" width="30" height="30">SEO Blog Writer</a>
+    <nav aria-label="Mục lục">
+      <a href="#nhan-duoc">Bạn nhận được gì</a>
+      <a href="#quy-trinh">Quy trình</a>
+      <a href="#tao-anh">Tạo ảnh</a>
+      <a href="#bat-dau">Bắt đầu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <h1>Từ một từ khóa đến bài blog SEO tiếng Việt</h1>
+      <p class="lead">Skill hướng dẫn ChatGPT làm trọn quy trình viết bài: nghiên cứu nguồn, đề xuất tiêu đề, lập dàn ý, viết nội dung, tạo bộ ảnh minh họa và chuẩn bị bản nháp WordPress.</p>
+      <div class="actions">
+        <a class="btn btn-main" href="https://chatgpt.com/skills?skill_id=6a9992d4b6b481918e9e786f1e544565" target="_blank" rel="noopener">Mở skill trong ChatGPT</a>
+        <a class="btn btn-ghost" href="#bat-dau">Xem câu lệnh mẫu</a>
+      </div>
+    </div>
+
+    <div class="sheet" role="img" aria-label="Minh họa: từ khóa “AI marketing cho doanh nghiệp nhỏ” được triển khai thành tiêu đề, 9 mục H2 kèm ảnh, kết luận và 6 câu hỏi thường gặp">
+      <div class="kw">Từ khóa <b>AI marketing cho doanh nghiệp nhỏ</b></div>
+      <p class="t">AI marketing cho doanh nghiệp nhỏ – bắt đầu từ đâu?</p>
+      <ol>
+        <li><span>H2 1</span><em>AI marketing là gì</em><i></i></li>
+        <li><span>H2 2</span><em>Lợi ích với doanh nghiệp nhỏ</em><i></i></li>
+        <li><span>H2 3</span><em>Công cụ nên thử trước</em><i></i></li>
+        <li><span>H2 4</span><em>Lập kế hoạch nội dung</em><i></i></li>
+        <li><span>… 9</span><em>Đo lường và cải thiện</em><i></i></li>
+      </ol>
+      <div class="more"><span>Kết luận</span><span>6 câu FAQ</span><span>Meta title, description</span><span>Alt ảnh tiếng Việt</span></div>
+    </div>
+  </div>
+
+  <section class="paper" id="nhan-duoc">
+    <div class="wrap">
+      <h2>Bạn nhận được gì</h2>
+      <p class="sub">Phù hợp cho người làm content, marketing, chủ website và đội sản xuất blog tiếng Việt.</p>
+      <ul class="gets">
+        <li>10 gợi ý tiêu đề phù hợp với từ khóa và mục tiêu tìm kiếm.</li>
+        <li>Dàn ý mặc định 9 H2 nội dung, có điểm duyệt trước khi viết.</li>
+        <li>Bài viết tiếng Việt khoảng 1.800–2.500 từ, kèm kết luận và 6 câu FAQ.</li>
+        <li>Bộ ảnh minh họa nhất quán về phong cách, có prompt riêng và alt tiếng Việt cho từng ảnh.</li>
+        <li>Meta title, meta description và file Markdown; thêm HTML khi cần đưa lên WordPress.</li>
+        <li>Bản nháp WordPress và link chỉnh sửa khi đã có kết nối phù hợp.</li>
+      </ul>
+      <p class="note">Số H2, độ dài, số ảnh, phong cách và cách duyệt đều điều chỉnh được theo yêu cầu của bạn.</p>
+    </div>
+  </section>
+
+  <section id="quy-trinh">
+    <div class="wrap">
+      <h2>Quy trình từng bước</h2>
+      <p class="sub">Có hai điểm bạn duyệt trước khi ChatGPT viết tiếp: chọn tiêu đề và duyệt dàn ý.</p>
+      <ol class="flow">
+        <li>
+          <h3>Nghiên cứu</h3>
+          <p>Đọc 3–5 nguồn liên quan, xác định ý định tìm kiếm, chủ đề phụ và khoảng trống nội dung.</p>
+          <p class="out">Kết quả: ghi chú nguồn và hướng triển khai.</p>
+        </li>
+        <li>
+          <h3>Tiêu đề <span class="gate">Bạn chọn</span></h3>
+          <p>Đề xuất 10 tiêu đề dưới 120 ký tự, dùng từ khóa một cách tự nhiên.</p>
+          <p class="out">Chưa ưng thì yêu cầu đề xuất lại.</p>
+        </li>
+        <li>
+          <h3>Dàn ý <span class="gate">Bạn duyệt</span></h3>
+          <p>Lập mặc định 9 H2, mỗi H2 có 2–3 luận điểm.</p>
+          <p class="out">Cần sửa thì chỉnh dàn ý trước khi viết.</p>
+        </li>
+        <li>
+          <h3>Viết bài</h3>
+          <p>Viết theo cụm 2–3 H2, ghép và biên tập toàn bài; thêm mở bài, kết luận và 6 FAQ.</p>
+          <p class="out">Kết quả: bản thảo hoàn chỉnh, có dẫn nguồn và bảng khi phù hợp.</p>
+        </li>
+        <li>
+          <h3>Tạo ảnh</h3>
+          <p>Xác định số ảnh, chuẩn bị prompt, tạo lần lượt bằng ChatGPT và kiểm tra từng ảnh.</p>
+          <p class="out">Kết quả: bộ ảnh, alt và bảng ánh xạ vị trí trong bài.</p>
+        </li>
+        <li>
+          <h3>Kiểm tra và xuất</h3>
+          <p>Kiểm tra cấu trúc, nguồn, từ khóa, số ảnh và liên kết; viết metadata.</p>
+          <p class="out">Kết quả: file Markdown, HTML khi cần và bộ ảnh.</p>
+        </li>
+        <li>
+          <h3>WordPress</h3>
+          <p>Khi có website và quyền truy cập: tải ảnh lên Media Library, tạo bản nháp và đọc lại kết quả.</p>
+          <p class="out">Kết quả: link sửa bản nháp. Chưa kết nối thì bàn giao file.</p>
+        </li>
+      </ol>
+
+      <div class="modes">
+        <div class="mode">
+          <h3>Chế độ có duyệt</h3>
+          <p>Bạn chọn tiêu đề và duyệt dàn ý trước khi ChatGPT viết tiếp.</p>
+        </div>
+        <div class="mode">
+          <h3>Chế độ tự động</h3>
+          <p>Khi bạn yêu cầu làm toàn bộ tự động, ChatGPT tự chọn tiêu đề và dàn ý, thông báo lựa chọn rồi tiếp tục. Tiêu đề hoặc dàn ý bạn đã đưa sẽ được dùng nguyên.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper" id="tao-anh">
+    <div class="wrap">
+      <h2>Tạo ảnh hàng loạt</h2>
+      <p class="sub">Mỗi ảnh có một prompt riêng. Skill tạo lần lượt, kiểm tra từng ảnh và ghi tiến độ, nên khi gặp lỗi hoặc giới hạn công cụ chỉ cần tạo tiếp phần còn thiếu.</p>
+      <table class="tbl">
+        <thead><tr><th>Yêu cầu</th><th>Số ảnh sẽ tạo</th></tr></thead>
+        <tbody>
+          <tr><td>Bài mặc định 9 H2, không chỉ định số ảnh</td><td data-l="Số ảnh">9 ảnh nội dung</td></tr>
+          <tr><td>Bài 9 H2 và yêu cầu thêm ảnh bìa</td><td data-l="Số ảnh">10 ảnh: 9 nội dung + 1 bìa</td></tr>
+          <tr><td>Bài 4 H2, yêu cầu 3 ảnh nội dung + 1 bìa</td><td data-l="Số ảnh">4 ảnh, chọn vị trí minh họa phù hợp nhất</td></tr>
+          <tr><td>Chỉ định số lượng khác</td><td data-l="Số ảnh">Phân bổ theo yêu cầu và mục đích minh họa</td></tr>
+        </tbody>
+      </table>
+      <ul class="plain">
+        <li>Mặc định ảnh ngang 16:9, phong cách đơn giản và chuyên nghiệp.</li>
+        <li>Không tạo ảnh cho kết luận hoặc FAQ; chỉ thêm ảnh bìa khi được yêu cầu.</li>
+        <li>Ảnh lỗi hoặc biến thể bị bỏ không tính vào số ảnh hoàn thành.</li>
+        <li>Nếu chưa lấy được file ảnh để ghép vào bài, skill bàn giao ảnh đã hiển thị kèm bảng vị trí và nêu rõ phần chưa ghép.</li>
+        <li>Biểu đồ số liệu hoặc sơ đồ cần chính xác được vẽ bằng công cụ vẽ/plot phù hợp.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bat-dau">
+    <div class="wrap">
+      <h2>Bắt đầu sử dụng</h2>
+      <p class="sub">Mở skill trong ChatGPT, dán một trong hai câu lệnh mẫu rồi thay từ khóa của bạn. Skill chỉ hỏi thêm khi thông tin còn thiếu thật sự ảnh hưởng đến bài viết.</p>
+      <div class="prompts">
+        <div class="prompt">
+          <h3>Có duyệt tiêu đề và dàn ý</h3>
+          <pre id="p1">Dùng $seo-blog-writer viết bài về “AI marketing cho doanh nghiệp nhỏ”.
+Độc giả: chủ doanh nghiệp Việt Nam.
+Độ dài: khoảng 2.000 từ.
+Cho tôi chọn tiêu đề và duyệt dàn ý trước khi viết.
+Sau đó tạo 5 ảnh nội dung bằng ChatGPT, phong cách minh họa tối giản.</pre>
+          <button class="copy" type="button" data-copy="p1">Sao chép câu lệnh</button>
+        </div>
+        <div class="prompt">
+          <h3>Làm toàn bộ tự động</h3>
+          <pre id="p2">Dùng $seo-blog-writer tạo bài về “cách xây dựng kế hoạch content marketing”.
+Tự chọn tiêu đề và dàn ý, viết khoảng 2.500 từ với 9 H2.
+Tạo 9 ảnh nội dung và 1 ảnh bìa bằng ChatGPT, tỷ lệ 16:9, phong cách hiện đại, chuyên nghiệp.
+Xuất Markdown và HTML. Nếu chưa có kết nối WordPress, giao file hoàn chỉnh.</pre>
+          <button class="copy" type="button" data-copy="p2">Sao chép câu lệnh</button>
+        </div>
+      </div>
+      <p class="wp"><b>Tạo bản nháp WordPress:</b> cung cấp website đích và thiết lập quyền truy cập qua connector hoặc cơ chế xác thực an toàn mà môi trường hỗ trợ. Skill dùng trạng thái <b>draft</b> và trả link chỉnh sửa sau khi kiểm tra kết quả. Chỉ đăng công khai khi bạn yêu cầu.</p>
+      <div class="actions" style="margin-top:32px">
+        <a class="btn btn-main" href="https://chatgpt.com/skills?skill_id=6a9992d4b6b481918e9e786f1e544565" target="_blank" rel="noopener">Mở skill trong ChatGPT</a>
+        <a class="btn btn-ghost" href="https://github.com/founderksm/seo-blog-writer-skill-Son/blob/main/SKILL.md" target="_blank" rel="noopener">Đọc hướng dẫn đầy đủ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper" id="cong-cu">
+    <div class="wrap">
+      <h2>Công cụ cần có</h2>
+      <p class="sub">Cài skill là có quy trình hướng dẫn; việc thực thi phụ thuộc công cụ thực tế trong phiên làm việc. Không cần API key Pexels hay API key tạo ảnh riêng.</p>
+      <table class="tbl">
+        <thead><tr><th>Khả năng</th><th>Công cụ sử dụng</th><th>Khi chưa khả dụng</th></tr></thead>
+        <tbody>
+          <tr><td>Nghiên cứu</td><td data-l="Công cụ">Tìm kiếm web trong ChatGPT</td><td data-l="Khi chưa có">Dùng nguồn bạn cung cấp và nêu giới hạn nghiên cứu</td></tr>
+          <tr><td>Tạo bộ ảnh</td><td data-l="Công cụ">Tính năng tạo ảnh tích hợp của ChatGPT</td><td data-l="Khi chưa có">Báo ảnh còn thiếu, giữ prompt và phần đã hoàn thành</td></tr>
+          <tr><td>Xuất bài</td><td data-l="Công cụ">Công cụ file/runtime</td><td data-l="Khi chưa có">Nêu rõ phần chưa xuất được</td></tr>
+          <tr><td>Tạo bản nháp WordPress</td><td data-l="Công cụ">Connector phù hợp hoặc REST API đã cấu hình xác thực</td><td data-l="Khi chưa có">Hoàn thành bản thảo và bộ ảnh để bàn giao</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nguyen-tac">
+    <div class="wrap">
+      <h2>Nguyên tắc chất lượng</h2>
+      <ul class="rules">
+        <li>Nguồn và thông tin kiểm chứng được; không sao chép bài đối thủ, không bịa số liệu.</li>
+        <li>Từ khóa phân bố tự nhiên, không áp mật độ phần trăm cứng.</li>
+        <li>Đọc lại toàn bài để tránh lặp ý giữa các cụm H2.</li>
+        <li>Không hứa thứ hạng tìm kiếm.</li>
+        <li>Không lưu thông tin xác thực trong skill, bài viết hoặc repo.</li>
+        <li>Chỉ báo hoàn thành những bước đã thực hiện và kiểm tra được.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>SEO Blog Writer – skill viết blog SEO tiếng Việt cho ChatGPT</span>
+    <a href="https://github.com/founderksm/seo-blog-writer-skill-Son" target="_blank" rel="noopener">Xem mã nguồn trên GitHub</a>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = document.getElementById(btn.dataset.copy).textContent;
+    var done = function () {
+      btn.textContent = 'Đã sao chép';
+      btn.classList.add('done');
+      setTimeout(function () { btn.textContent = 'Sao chép câu lệnh'; btn.classList.remove('done'); }, 2000);
+    };
+    var fallback = function () {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch (e) {}
+      document.body.removeChild(ta);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else { fallback(); }
+  });
+});
+</script>
+</body>
+</html>
